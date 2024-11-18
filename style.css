@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column; /* Устанавливаем направление flex-контейнера */
+  min-height: 100vh; /* Высота body занимает весь экран */
+}
+
+.login_page {
+  margin: auto; /* Центрирование основного блока по вертикали и горизонтали */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Все элементы идут колонкой */
+  align-items: center;
+  justify-content: center; /* Центрирование по вертикали */
+}
+
+.header .logo {
+  margin: 15px auto;
+  display: block;
+  width: 275px;
+  height: 200px;
+}
+
+.login-box {
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.login_form input {
+  background: #262626;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.login_button {
+  background-color: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.facebook_login {
+  background: none;
+  color: #1877f2;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.facebook_login img {
+  width: 24px;
+  height: 24px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.divider span {
+  flex: 1;
+  height: 1px;
+  background-color: #444;
+}
+
+.divider p {
+  margin: 0 10px;
+  color: #777;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.signup_link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.signup_link a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.forgot_password {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #0095f6;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  font-size: 0.8rem;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #444;
+  width: 100%;
+  background-color: #000;
+  box-sizing: border-box; /* Учитываем padding в ширину */
+}
+
+.footer p {
+  margin: 5px 10px; /* Отступы между блоками текста */
+}
+
